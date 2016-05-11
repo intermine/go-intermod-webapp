@@ -1,0 +1,2 @@
+;; Analyzed by ClojureScript 1.7.170
+{:name gointermod.enrichment.subs, :doc nil, :excludes #{}, :use-macros {reaction reagent.ratom}, :require-macros {reagent.ratom reagent.ratom}, :uses nil, :requires {re-frame re-frame.core, re-frame.core re-frame.core}, :imports nil}
