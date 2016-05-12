@@ -22,6 +22,22 @@ h5 .icon,
 h6 .icon {
   opacity: 0.4;
 }
+.close {
+  cursor: pointer;
+  float: right;
+  background-color: #03a9f4;
+  color: #ffffff;
+  width: 1.5em;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  height: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  position: relative;
+  top: -25px;
+  border-radius: 1.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
 .hoverstate {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -84,6 +100,42 @@ h6 .icon {
 }
 .table-style tr:nth-child(even) {
   background: #e5e5e5;
+}
+.mine-color-pseudo-elements:before {
+  content: "";
+  opacity: 0.2;
+  display: block;
+  width: 3px;
+  height: 10px;
+  background: #ddd;
+  margin-top: 4px;
+  margin-right: 0;
+  float: left;
+  border-radius: 5px;
+}
+.mine-color-pseudo-elements:hover:before {
+  opacity: 1;
+}
+.mine-color-pseudo-elements.zebrafish:before {
+  background-color: #ff5722;
+}
+.mine-color-pseudo-elements.yeast:before {
+  background-color: #ffc107;
+}
+.mine-color-pseudo-elements.human:before {
+  background-color: #8bc34a;
+}
+.mine-color-pseudo-elements.worm:before {
+  background-color: #3f51b5;
+}
+.mine-color-pseudo-elements.mouse:before {
+  background-color: #00bcd4;
+}
+.mine-color-pseudo-elements.rat:before {
+  background-color: #e91e63;
+}
+.mine-color-pseudo-elements.fly:before {
+  background-color: #9c27b0;
 }
 button {
   padding: 1em;
@@ -268,6 +320,42 @@ textarea {
   min-width: 9em;
   flex-grow: 1;
 }
+.search .filters .output label:before {
+  content: "";
+  opacity: 0.2;
+  display: block;
+  width: 3px;
+  height: 10px;
+  background: #ddd;
+  margin-top: 4px;
+  margin-right: 0;
+  float: left;
+  border-radius: 5px;
+}
+.search .filters .output label:hover:before {
+  opacity: 1;
+}
+.search .filters .output label.zebrafish:before {
+  background-color: #ff5722;
+}
+.search .filters .output label.yeast:before {
+  background-color: #ffc107;
+}
+.search .filters .output label.human:before {
+  background-color: #8bc34a;
+}
+.search .filters .output label.worm:before {
+  background-color: #3f51b5;
+}
+.search .filters .output label.mouse:before {
+  background-color: #00bcd4;
+}
+.search .filters .output label.rat:before {
+  background-color: #e91e63;
+}
+.search .filters .output label.fly:before {
+  background-color: #9c27b0;
+}
 .search .filters .filter {
   padding: 0 1em;
   border-left: solid 1px #cccccc;
@@ -439,6 +527,7 @@ textarea {
 }
 .heatmap .axis {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.05) 80%, rgba(0, 0, 0, 0.05) 99%, rgba(0, 0, 0, 0.15) 100%);
+  min-width: 16em;
 }
 .heatmap th.goterm,
 .heatmap th {
@@ -516,7 +605,7 @@ textarea {
   background-color: rgba(0, 0, 0, 0.05);
 }
 .enrichment .settings > div {
-  margin: 0 2em 0 2em;
+  margin: 0 2em;
   line-height: 2.5em;
 }
 .enrichment .settings select {
@@ -529,6 +618,107 @@ textarea {
 .enrichment .organism {
   min-width: 400px;
   flex-grow: 1;
+}
+.status .organism {
+  background: #eeeeee;
+  border-left: solid 3px #ccc;
+  padding: 0.5em 0.5em 0.5em 1em;
+  margin: 0;
+}
+.status .organism:hover {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  background: #fbfbfb;
+  border-left: solid 3px #03a9f4;
+}
+.status .organism:active {
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s;
+  background: #c8c8c8;
+  border-left: solid 3px #0275a8;
+}
+.status .organism.zebrafish {
+  border-color: rgba(255, 87, 34, 0.4);
+}
+.status .organism.yeast {
+  border-color: rgba(255, 193, 7, 0.4);
+}
+.status .organism.human {
+  border-color: rgba(139, 195, 74, 0.4);
+}
+.status .organism.worm {
+  border-color: rgba(63, 81, 181, 0.4);
+}
+.status .organism.mouse {
+  border-color: rgba(0, 188, 212, 0.4);
+}
+.status .organism.rat {
+  border-color: rgba(233, 30, 99, 0.4);
+}
+.status .organism.fly {
+  border-color: rgba(156, 39, 176, 0.4);
+}
+.status h5 {
+  margin: 0;
+}
+.status .icon {
+  float: right;
+  margin-top: -20px;
+  color: rgba(0, 0, 0, 0.2);
+}
+.status .info {
+  max-width: 12em;
+}
+.status .modal {
+  opacity: 1;
+  display: block;
+  position: fixed;
+  text-shadow: none;
+  background: #fff;
+  border-radius: 2px;
+  left: 10%;
+  top: 10%;
+  right: 10%;
+  bottom: 60%;
+  overflow: auto;
+  padding: 1em;
+  border-left: solid 3px;
+}
+.status .modal .icon {
+  float: none;
+  display: inline;
+  margin: 0 0.5em 0 0;
+}
+.status .modal.zebrafish {
+  border-color: #ff5722;
+}
+.status .modal.yeast {
+  border-color: #ffc107;
+}
+.status .modal.human {
+  border-color: #8bc34a;
+}
+.status .modal.worm {
+  border-color: #3f51b5;
+}
+.status .modal.mouse {
+  border-color: #00bcd4;
+}
+.status .modal.rat {
+  border-color: #e91e63;
+}
+.status .modal.fly {
+  border-color: #9c27b0;
+}
+.status .fade {
+  display: block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 .db tr:nth-child(even) {
   background-color: rgba(50, 150, 200, 0.1);
