@@ -1,0 +1,2 @@
+;; Analyzed by ClojureScript 1.7.170
+{:name gointermod.config, :doc nil, :excludes #{}, :use-macros nil, :require-macros nil, :uses nil, :requires nil, :imports nil, :defs {debug? {:name gointermod.config/debug?, :file "/home/FILESERVER5/micklem/yy406/projects/go-intermod/src/cljs/gointermod/config.cljs", :line 3, :column 1, :end-line 3, :end-column 12, :meta {:file "/home/FILESERVER5/micklem/yy406/projects/go-intermod/src/cljs/gointermod/config.cljs", :line 3, :column 6, :end-line 3, :end-column 12}}}}
