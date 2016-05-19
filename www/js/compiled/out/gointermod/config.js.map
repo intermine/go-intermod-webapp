@@ -1,1 +1,0 @@
-{"version":3,"file":"\/home\/FILESERVER5\/micklem\/yy406\/projects\/go-intermod\/resources\/public\/js\/compiled\/out\/gointermod\/config.js","sources":["config.cljs?rel=1463388065342"],"lineCount":10,"mappings":";AAAA;;AAEA,AAAKA,iCACMC;AAEX,oBAAMD;AAAN,AACE,AAACE;;AADH","names":["gointermod.config\/debug?","js\/goog.DEBUG","cljs.core\/enable-console-print!"]}
