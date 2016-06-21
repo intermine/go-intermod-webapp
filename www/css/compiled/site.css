@@ -910,6 +910,22 @@ textarea {
 .ontology .title .organism.fly {
   border-color: #9c27b0;
 }
+.status:hover {
+  cursor: pointer;
+}
+.status .success {
+  font-size: 75%;
+  width: 45%;
+  margin: 0 0.5em 0 0;
+  display: block;
+  float: left;
+}
+.status .success:after,
+.status .counts:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .status .organism {
   background: #eeeeee;
   border-left: solid 3px #cccccc;
@@ -951,6 +967,7 @@ textarea {
 }
 .status h5 {
   margin: 0;
+  clear: both;
 }
 .status .icon {
   float: right;
