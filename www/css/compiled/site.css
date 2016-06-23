@@ -679,6 +679,9 @@ textarea {
   border-bottom: solid 1px #607d8b;
   background: #fff;
 }
+.heatmap .expand {
+  cursor: pointer;
+}
 .heatmap .species,
 .heatmap .ortholog {
   min-width: 7.5em;
@@ -910,12 +913,15 @@ textarea {
 .ontology .title .organism.fly {
   border-color: #9c27b0;
 }
+.status .success,
+.status .error {
+  font-size: 75%;
+}
 .status:hover {
   cursor: pointer;
 }
 .status .success {
-  font-size: 75%;
-  width: 45%;
+  min-width: 35%;
   margin: 0 0.5em 0 0;
   display: block;
   float: left;
