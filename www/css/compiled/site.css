@@ -486,6 +486,9 @@ textarea {
 .search .filters .filter form.evidence {
   flex-direction: column;
 }
+.search .filters .filter a.change-codes {
+  font-weight: normal;
+}
 .search .filters .evidence-mini {
   flex-grow: 1;
   display: flex;
@@ -687,7 +690,7 @@ textarea {
   min-width: 7.5em;
   float: left;
 }
-.heatmap .ortholog {
+.heatmap div.ortholog {
   text-align: right;
   float: right;
   margin-right: 8px;
@@ -701,7 +704,22 @@ textarea {
   border-bottom: solid 1px #cccccc;
   text-shadow: 0 0 1px #fff;
 }
+.heatmap td svg {
+  float: right;
+}
+.heatmap td.ortholog {
+  min-width: 100px;
+}
 .heatmap .no-orthologs {
+  border-right: 0;
+}
+.heatmap .rat td:nth-child(2),
+.heatmap .worm td:nth-child(2),
+.heatmap .human td:nth-child(2),
+.heatmap .zebrafish td:nth-child(2),
+.heatmap .mouse td:nth-child(2),
+.heatmap .yeast td:nth-child(2),
+.heatmap .fly td:nth-child(2) {
   border-right: 0;
 }
 .heatmap .rat td:first-child,
@@ -1003,6 +1021,9 @@ textarea {
   float: none;
   display: inline;
   margin: 0 0.5em 0 0;
+}
+.status .modal h4 {
+  margin-bottom: 1em;
 }
 .status .modal.zebrafish {
   border-color: #ff5722;
