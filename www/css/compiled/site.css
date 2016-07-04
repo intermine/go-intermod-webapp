@@ -23,14 +23,14 @@ h6 .icon {
   opacity: 0.4;
 }
 footer {
-  background: #444;
+  background: #444444;
   padding: 1em;
   box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.6);
 }
 footer a,
 footer a:visited {
   font-weight: normal;
-  color: #fff;
+  color: #ffffff;
 }
 footer a:hover {
   color: #fffde7;
@@ -71,7 +71,7 @@ a:hover {
 }
 .default > div {
   margin-top: 1em;
-  background: #fff;
+  background: #ffffff;
   border-radius: 2px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -266,17 +266,17 @@ nav li a.active,
 nav li a:visited.active {
   transition: all 1s;
   background-color: #607d8b;
-  color: #fff;
+  color: #ffffff;
   border-left: solid 3px #41545e;
 }
 nav li a.active:hover,
 nav li a:visited.active:hover {
   background-color: #607d8b;
-  color: #fff;
+  color: #ffffff;
 }
 nav li a.active svg,
 nav li a:visited.active svg {
-  fill: #fff;
+  fill: #ffffff;
 }
 nav li a svg,
 nav li a:visited svg {
@@ -326,13 +326,22 @@ textarea {
   float: left;
 }
 .contentbody .download {
+  float: right;
+}
+.contentbody .download h3,
+.contentbody .download a {
   float: left;
   clear: right;
-  line-height: 36px;
-  margin-left: 1em;
+  line-height: 1.8em;
+  margin: 0 0 0 1.2em;
 }
-.contentbody .download svg {
+.contentbody .download h3 svg,
+.contentbody .download a svg {
   margin-top: 0.5em;
+  margin-right: 0.2em;
+}
+.contentbody .download a {
+  line-height: 2.2em;
 }
 @keyframes pulse {
   0% {
@@ -578,6 +587,9 @@ textarea {
 }
 .ortholog-results .aggregate tr:nth-child(even) {
   background: #e5e5e5;
+}
+.heatmap .download {
+  float: left;
 }
 .heatmap h3 {
   line-height: 1.2em;
