@@ -36,6 +36,9 @@ footer a:hover {
   color: #fffde7;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
+footer a {
+  margin: 0 1em;
+}
 a {
   cursor: pointer;
   color: #607d8b;
